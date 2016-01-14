@@ -70,12 +70,14 @@ section.events
   position relative
   height 20%
 
+  background white
+
   .content
     max-width 1200px
     margin 0 auto
 
   h1.pop-up
-    z-index 2
+    z-index 1
     margin 0
     position absolute
     font-size 4.5rem
@@ -91,8 +93,9 @@ section.events
     position absolute
     top 50px
     left 0
-    background purp2
+    background purp
     height calc(100% - 50px)
+    z-index 1
 
     &:before
       content ''
@@ -102,4 +105,3 @@ section.events
       border-color transparent purp transparent transparent
       border-width 100px 2400px 0 0
       border-style solid
-      z-index 0
