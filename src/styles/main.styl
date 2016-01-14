@@ -4,6 +4,9 @@
 body
   overflow-x hidden
 
+  @media all and (min-width: 1200px)
+    font-size 20px
+
 header
   height 80%
   background-image url(https://scontent.xx.fbcdn.net/hphotos-xtp1/v/t1.0-9/12187892_1515184765460966_4797084952532413331_n.jpg?oh=b0c633f29a48f50777110dcdc7a01e63&oe=573ABE0E)
@@ -86,7 +89,11 @@ section.events
     color white
     padding-left 50px
     top -68px
-    text-shadow 0 -5px darken(purp, 60%)
+
+    @media all and (min-width: 1200px)
+      font-size 5rem
+      top -76px
+      padding-left 0
 
   .swatch
     width 100%
