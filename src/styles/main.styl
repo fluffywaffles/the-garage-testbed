@@ -1,12 +1,17 @@
 @import 'reset'
 @import 'abstract'
 
+body
+  overflow-x hidden
+
 header
   height 80%
   background-image url(https://scontent.xx.fbcdn.net/hphotos-xtp1/v/t1.0-9/12187892_1515184765460966_4797084952532413331_n.jpg?oh=b0c633f29a48f50777110dcdc7a01e63&oe=573ABE0E)
   background-size cover
+  background-position center 33%
   position relative
   overflow hidden
+  z-index 1
 
   .content
     height 100%
@@ -21,8 +26,9 @@ header
 
     img.nu
       display block
-      padding 10px 0 0 23%
-      height 15px
+      position absolute
+      padding 10px 0 10px 25%
+      height 36px
 
   img.logo
     z-index 2
@@ -30,7 +36,7 @@ header
     max-width 600px
     display block
     position absolute
-    left calc(25% + 20px)
+    left calc(25% + 50px)
     top calc(25% + 15px)
 
   .abstract-upper, .abstract-lower
@@ -50,7 +56,8 @@ header
       height 55px
 
       img.nu
-        padding 20px 0 0 22%
+        padding 20px 0 20px 23%
+        height 55px
     img.logo
       top 315px
       left calc(50% - 350px)
@@ -58,3 +65,41 @@ header
       transform scaleX(2) scaleY(1.5)
     .abstract-lower
       transform scaleX(2) scaleY(1.5)
+
+section.events
+  position relative
+  height 20%
+
+  .content
+    max-width 1200px
+    margin 0 auto
+
+  h1.pop-up
+    z-index 2
+    margin 0
+    position absolute
+    font-size 4.5rem
+    text-transform uppercase
+    font-family 'Open Sans', Helvetica, Arial, sans-serif
+    color white
+    padding-left 50px
+    top -68px
+    text-shadow 0 -5px darken(purp, 60%)
+
+  .swatch
+    width 100%
+    position absolute
+    top 50px
+    left 0
+    background purp2
+    height calc(100% - 50px)
+
+    &:before
+      content ''
+      position absolute
+      top -95px
+      left calc(50% - 1200px)
+      border-color transparent purp transparent transparent
+      border-width 100px 2400px 0 0
+      border-style solid
+      z-index 0
