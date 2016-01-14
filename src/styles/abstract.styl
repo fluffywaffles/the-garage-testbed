@@ -1,0 +1,99 @@
+purp = #aa55aa
+purp2 = darken(purp, 10%)
+purp3 = darken(purp, 20%)
+purp4 = darken(purp, 30%)
+purp5 = darken(purp, 40%)
+
+.trap
+  position absolute
+  z-index 1
+
+  height 100px
+
+  background purp
+
+  transform rotateZ(45deg)
+
+  &:after
+    content ''
+    display block
+
+    width 0
+    height 0
+
+    position absolute
+    right -99px
+
+    border-width 50px
+    border-color transparent transparent purp purp
+    border-style solid
+
+.trap-1
+  z-index 2
+  width 450px
+  left -175px
+.trap-2
+  width 200px
+  top -30px
+  left 10px
+  background purp2
+  transform rotateZ(35deg)
+  &:after
+    border-width 25px
+    border-color transparent transparent purp2 purp2
+    transform scaleY(2)
+    right -49px
+    top 25px
+.trap-3
+  width 300px
+  left -100px
+  top 140px
+  background purp2
+  &:after
+    border-width 25px
+    border-color transparent transparent purp2 purp2
+    transform scaleY(2) scaleX(1.2)
+    right -54px
+    top 25px
+.trap-4
+  width 300px
+  height 80px
+  left -200px
+  top 153px
+  background purp3
+  transform rotateZ(50deg)
+  &:after
+    border-width 20px
+    border-color purp3 transparent transparent purp3
+    transform scaleY(2)
+    right -39px
+    top 20px
+
+.tri
+  z-index 1
+  position absolute
+  right -50px
+  bottom 20px
+
+  width 0
+  height 0
+  border-width 50px
+  border-color transparent transparent purp purp
+  border-style solid
+
+  transform-origin bottom right
+
+.tri-1
+  transform rotateZ(30deg) scaleX(1.5)
+.tri-2
+  transform rotateZ(15deg) scaleX(1.5)
+  border-color transparent transparent purp2 purp2
+.tri-3
+  transform rotateZ(0deg) scaleX(1.5)
+  border-color transparent transparent purp3 purp3
+.tri-4
+  transform rotateZ(-15deg) scaleX(1.5)
+  border-color transparent transparent purp4 purp4
+.tri-5
+  transform rotateZ(-30deg) scaleX(1.5)
+  border-color transparent transparent purp5 purp5

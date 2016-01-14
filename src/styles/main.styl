@@ -1,0 +1,60 @@
+@import 'reset'
+@import 'abstract'
+
+header
+  height 80%
+  background-image url(https://scontent.xx.fbcdn.net/hphotos-xtp1/v/t1.0-9/12187892_1515184765460966_4797084952532413331_n.jpg?oh=b0c633f29a48f50777110dcdc7a01e63&oe=573ABE0E)
+  background-size cover
+  position relative
+  overflow hidden
+
+  .content
+    height 100%
+    background-color rgba(0,0,0,0.2)
+
+  .top-bar
+    background purp5
+    width 100%
+    height 36px
+    top 0
+    position absolute
+
+    img.nu
+      display block
+      padding 10px 0 0 23%
+      height 15px
+
+  img.logo
+    z-index 2
+    width 50%
+    max-width 600px
+    display block
+    position absolute
+    left calc(25% + 20px)
+    top calc(25% + 15px)
+
+  .abstract-upper, .abstract-lower
+    position absolute
+    overflow hidden
+    width 100%
+    height 100%
+
+  .abstract-upper
+    transform-origin top left
+
+  .abstract-lower
+    transform-origin bottom right
+
+  @media all and (min-width: 1200px)
+    .top-bar
+      height 55px
+
+      img.nu
+        padding 20px 0 0 22%
+    img.logo
+      top 315px
+      left calc(50% - 350px)
+    .abstract-upper
+      transform scaleX(2) scaleY(1.5)
+    .abstract-lower
+      transform scaleX(2) scaleY(1.5)
